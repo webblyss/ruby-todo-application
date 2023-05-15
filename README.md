@@ -22,3 +22,8 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+![Screenshot from 2023-05-15 08-03-44](https://github.com/webblyss/ruby-todo-application/assets/60282806/e6fcf6e9-3846-4e49-8bee-a1e9c290c7aa)
+
+
+
