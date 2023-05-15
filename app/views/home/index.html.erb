@@ -1,0 +1,36 @@
+
+<%= render 'shared/navbar' %>
+<div class="container">
+  <h1>Welcome to the Home Page</h1>
+<div class="container">
+  <%= form_with url: '/process_input', method: :post do |form| %>
+    <div class="form-group">
+      <%= form.label :title %>
+      <%= form.text_field :title, class: 'form-control' %>
+      <%= form.label :description %>
+      <%= form.text_field :desc, class: 'form-control' %>
+    </div>
+
+    <%= form.submit 'Submit', class: 'btn btn-primary' %>
+  <% end %>
+</div>
+
+  
+</div>
+
+<div class="container my-5">
+  <h1>Todos</h1>
+
+  <% flash.each do |key, value| %>
+    <div class="alert alert-<%= key %>">
+      <%= value %>
+    </div>
+  <% end %>
+
+ <%= render 'shared/todo'  %>
+</div>
+
+
+
+
+
